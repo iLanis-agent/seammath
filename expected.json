@@ -1,0 +1,167 @@
+[
+ {
+  "fn": "cutTruth",
+  "args": [
+   10,
+   8,
+   0.5
+  ],
+  "expected": "Finished 10 x 8 with a 0.5 seam allowance on every edge: cut 11 x 9."
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   10,
+   8,
+   0
+  ],
+  "expected": "Finished 10 x 8 with a 0 seam allowance on every edge: cut 10 x 8."
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   12.25,
+   6.5,
+   0.625
+  ],
+  "expected": "Finished 12.25 x 6.5 with a 0.63 seam allowance on every edge: cut 13.51 x 7.76."
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   1.5,
+   1.5,
+   0.25
+  ],
+  "expected": "Finished 1.5 x 1.5 with a 0.25 seam allowance on every edge: cut 2 x 2."
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   0,
+   8,
+   0.5
+  ],
+  "expected": "ERR:width must be between 0 and 1000, over 0"
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   10,
+   8,
+   -1
+  ],
+  "expected": "ERR:seam allowance must be between 0 and 1000"
+ },
+ {
+  "fn": "cutTruth",
+  "args": [
+   10,
+   1001,
+   0.5
+  ],
+  "expected": "ERR:height must be between 0 and 1000, over 0"
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   30,
+   1.5,
+   2
+  ],
+  "expected": "Finished length 30, hem depth 1.5, turned twice: cut 33."
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   30,
+   1.5,
+   1
+  ],
+  "expected": "Finished length 30, hem depth 1.5, turned once: cut 31.5."
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   45.75,
+   0,
+   2
+  ],
+  "expected": "Finished length 45.75, hem depth 0, turned twice: cut 45.75."
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   30,
+   1.5,
+   3
+  ],
+  "expected": "ERR:turns must be 1 or 2"
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   0,
+   1.5,
+   2
+  ],
+  "expected": "ERR:length must be between 0 and 1000, over 0"
+ },
+ {
+  "fn": "hemTruth",
+  "args": [
+   30,
+   -1,
+   2
+  ],
+  "expected": "ERR:hem depth must be between 0 and 1000"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   4,
+   3.8
+  ],
+  "expected": "Test square should measure 4, measured 3.8: set the print scale to 105.3%."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   4,
+   4
+  ],
+  "expected": "Test square should measure 4, measured 4: set the print scale to 100.0%."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   10,
+   10.4
+  ],
+  "expected": "Test square should measure 10, measured 10.4: set the print scale to 96.2%."
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   4,
+   0
+  ],
+  "expected": "ERR:measured size must be between 0 and 1000, over 0"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   0,
+   3.8
+  ],
+  "expected": "ERR:expected size must be between 0 and 1000, over 0"
+ },
+ {
+  "fn": "scaleTruth",
+  "args": [
+   100,
+   97.5
+  ],
+  "expected": "Test square should measure 100, measured 97.5: set the print scale to 102.6%."
+ }
+]
